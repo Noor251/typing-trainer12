@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>تمارين الطباعة الدقيقة</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background-color: #f0f0f0; padding: 20px; }
+    .exercise { background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h2 { color: #333; }
+    .timer { font-size: 18px; margin-bottom: 10px; color: #b30000; }
+    button { padding: 8px 16px; background: #007acc; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background: #005fa3; }
+    textarea { width: 100%; height: 100px; margin-top: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; }
+  </style>
+</head>
+<body>
+  <h1>تمارين الطباعة الدقيقة - دقيقة لكل تمرين</h1>
+
+  <script>
+    function startTimer(id) {
+      const timer = document.getElementById('timer-' + id);
+      let time = 60;
+      timer.textContent = 'الوقت المتبقي: 60 ثانية';
+      const interval = setInterval(() => {
+        time--;
+        timer.textContent = 'الوقت المتبقي: ' + time + ' ثانية';
+        if (time <= 0) {
+          clearInterval(interval);
+          alert('انتهى الوقت!');
+        }
+      }, 1000);
+    }
+  </script>
+
+  <!-- التمارين -->
+  <div class="exercise">
+    <h2>التمرين 1</h2>
+    <div class="timer" id="timer-1"></div>
+    <p>أحمد بدأ بالإجابة عن السؤال.<br>آمنة تحب قراءة الآيات الكريمة.<br>مسؤوليتنا أن نُؤدي الأمانة.<br>إيمان الطالبة متفوقة.</p>
+    <button onclick="startTimer(1)">ابدأ التمرين</button>
+    <textarea placeholder="اكتب الفقرة هنا..."></textarea>
+  </div>
+
+  <div class="exercise">
+    <h2>التمرين 2</h2>
+    <div class="timer" id="timer-2"></div>
+    <p>اِنتبهْ عندَ الطباعةِ إلى استخدامِ النُّقطةِ (.) والفاصلةِ(،) وعلاماتِ الاستفهامِ (؟) والتَّعجُّبِ (!).</p>
+    <button onclick="startTimer(2)">ابدأ التمرين</button>
+    <textarea placeholder="اكتب الفقرة هنا..."></textarea>
+  </div>
+
+  <div class="exercise">
+    <h2>التمرين 3</h2>
+    <div class="timer" id="timer-3"></div>
+    <p>تبلغ نسبة الخصم %25.<br>استخدم الدالة _الحساب( ) للحصول على النتيجة.<br>تحقق من القيمة بين )الحد الأدنى) و (الحد الأقصى ).</p>
+    <button onclick="startTimer(3)">ابدأ التمرين</button>
+    <textarea placeholder="اكتب الفقرة هنا..."></textarea>
+  </div>
+
+  <div class="exercise">
+    <h2>التمرين 4</h2>
+    <div class="timer" id="timer-4"></div>
+    <p>متى تَبدأُ العُطلةُ الصيفيّة؟ إنَّها قريبةٌ، وسنقضي أوقاتًا مُمتِعةً في القراءةِ والسَّفرِ والاستجمام.</p>
+    <button onclick="startTimer(4)">ابدأ التمرين</button>
+    <textarea placeholder="اكتب الفقرة هنا..."></textarea>
+  </div>
+
+  <div class="exercise">
+    <h2>التمرين 5</h2>
+    <div class="timer" id="timer-5"></div>
+    <p>قال المُعلِّمُ: "العِلمُ نورٌ، والجهلُ ظَلامٌ! فاحرصوا يا طُلّابَ العِلمِ على التعلُّمِ كلَّ يومٍ."</p>
+    <button onclick="startTimer(5)">ابدأ التمرين</button>
+    <textarea placeholder="اكتب الفقرة هنا..."></textarea>
+  </div>
+
+  <div class="exercise">
+    <h2>التمرين 6</h2>
+    <div class="timer" id="timer-6"></div>
+    <p>أصبحت الطباعة السريعة ضرورة للطلاب والمعلمين، فهي توفر الوقت وتزيد الإنتاجية وتقلل من الأخطاء أثناء كتابة الدروس أو التقارير.</p>
+    <button onclick="startTimer(6)">ابدأ التمرين</button>
+    <textarea placeholder="اكتب الفقرة هنا..."></textarea>
+  </div>
+
+  <div class="exercise">
+    <h2>التمرين 7</h2>
+    <div class="timer" id="timer-7"></div>
+    <p>يبدأ المتدرب بالتمرين عبر قراءة الجملة ثم كتابتها بسرعة دون النظر إلى لوحة المفاتيح، مع تكرار كل تمرين ثلاث مرات.</p>
+    <button onclick="startTimer(7)">ابدأ التمرين</button>
+    <textarea placeholder="اكتب الفقرة هنا..."></textarea>
+  </div>
+
+  <div class="exercise">
+    <h2>التمرين 8</h2>
+    <div class="timer" id="timer-8"></div>
+    <p>!الطّالبُ المُجتهدُ يُذاكرُ دروسَهُ أوّلًا بأوّل، ويَحرصُ على تطبيقِ ما يَتعلَّمُه عمليًّا في الحياةِ اليوميّة.</p>
+    <button onclick="startTimer(8)">ابدأ التمرين</button>
+    <textarea placeholder="اكتب الفقرة هنا..."></textarea>
+  </div>
+
+  <div class="exercise">
+    <h2>التمرين 9</h2>
+    <div class="timer" id="timer-9"></div>
+    <p>قالتِ المُدرِّبةُ: "الاستمراريّةُ سِرُّ النجاحِ! لا تُهمِلوا التَّدريبَ اليوميَّ ولو لخمسِ دقائقَ فقط!"</p>
+    <button onclick="startTimer(9)">ابدأ التمرين</button>
+    <textarea placeholder="اكتب الفقرة هنا..."></textarea>
+  </div>
+
+  <div class="exercise">
+    <h2>التمرين 10</h2>
+    <div class="timer" id="timer-10"></div>
+    <p>الطباعةُ المُشكّلةُ تُساعِدُ على تَثبيتِ الحروفِ في الذِّهن، وتُحسِّنُ من المهارةِ الكتابيّةِ لديك.</p>
+    <button onclick="startTimer(10)">ابدأ التمرين</button>
+    <textarea placeholder="اكتب الفقرة هنا..."></textarea>
+  </div>
+</body>
+</html>
